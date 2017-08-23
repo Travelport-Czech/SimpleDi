@@ -2,8 +2,6 @@
 
 namespace Cee\SimpleDi;
 
-require __DIR__ . '/../vendor/autoload.php';
-
 class Container {
   public function createServiceOnce($name) {
     if (key_exists($name, $this->_usedServices)) {
