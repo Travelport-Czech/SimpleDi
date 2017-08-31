@@ -9,6 +9,8 @@ php:
   
 before_script:
   - composer self-update
-  - composer install --prefer-source --no-interaction --dev
 
-script: $COMPOSER_BIN_DIR/phpunit tests
+install:
+  - composer install --no-interaction --prefer-source
+
+script: echo $COMPOSER_BIN_DIR && $COMPOSER_BIN_DIR/phpunit tests
