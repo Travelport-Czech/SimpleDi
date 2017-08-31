@@ -13,4 +13,4 @@ before_script:
 install:
   - composer install --no-interaction --prefer-source
 
-script: echo $COMPOSER_BIN_DIR && $COMPOSER_BIN_DIR/phpunit tests
+script: vendor/bin/phpunit tests
