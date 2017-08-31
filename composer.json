@@ -13,9 +13,6 @@
         }
     ],
     "licence" : "MIT",
-    "require": {
-      "php": ">=5.5"
-    },
     "require-dev": {
         "phpunit/phpunit": "^5.6"
     },
