@@ -13,4 +13,4 @@ before_script:
 install:
   - composer install --no-interaction --prefer-source
 
-script: vendor/bin/phpunit tests
+script: phpunit tests
