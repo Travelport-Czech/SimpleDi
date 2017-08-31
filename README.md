@@ -1,6 +1,8 @@
 # SimpleDi
 Simple Dependency Injection Container
 
+[![Build Status](https://travis-ci.org/Travelport-Czech/SimpleDi.svg?branch=master)](https://travis-ci.org/Travelport-Czech/SimpleDi)
+
 Useful for making dependency tree of a service classes. The Service class is a class which has only one instance in a application. It can be used for simple alternative to Nette Di Container. All configuration of the DI Container is in PHP language.
 
 ## Basic usage
