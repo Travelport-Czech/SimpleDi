@@ -4,7 +4,7 @@ namespace Cee\SimpleDi\Tests\Basic;
 
 use Cee\SimpleDi;
 
-require_once __DIR__ . '/../../Container.php';
+require_once __DIR__ . '/../../src/Container.php';
 
 class ClassA {}
 
