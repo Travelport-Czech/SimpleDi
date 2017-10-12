@@ -47,7 +47,7 @@ class NotificationService {
 ```
 Implementations of an interfaces:
 ```php
-class ErrorLogLogger {
+class ErrorLogLogger extends Logger {
   public function log($message) {
     error_log('Error: ' . $message);
   }
@@ -55,7 +55,7 @@ class ErrorLogLogger {
 ```
 
 ```php
-class SendMailMailer {
+class SendMailMailer extends Mailer {
   public function send($message, $subject, $to) {
     mail($to, $subject, $message);
   }
