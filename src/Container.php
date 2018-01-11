@@ -27,6 +27,17 @@ class Container {
     $this->_createdServices[$name] = $instance;
   }
 
+  protected function addServiceInstanceForAncestor($instance, $ancestorClass) {
+    if (!$instance instanceof $ancestorClass) {
+      $name = get_class($instance);
+      throw new Exception("Service '$name' is not instance of '$ancestorClass'");
+    }
+    if ($this->isCreated($ancestorClass)) {
+      throw new Exception("Service '$ancestorClass' is already created");
+    }
+    $this->_createdServices[$ancestorClass] = $instance;
+  }
+
   protected function getService($name) {
     return $this->_createService($name);
   }
